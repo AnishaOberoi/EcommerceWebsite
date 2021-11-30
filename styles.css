@@ -357,7 +357,7 @@ li {
 
 .advert-box {
   position: relative;
-  color: #fff;
+  color: black;
   height: 27rem;
   border-radius: 1rem;
   padding: 1.6rem;
@@ -368,9 +368,9 @@ li {
 .advert-box img {
   position: absolute;
   bottom: 0%;
-  left: -20%;
+  left: 0%;
   height: 100%;
-  width: 35rem;
+  width: 100%;
   z-index: -1;
 }
 
