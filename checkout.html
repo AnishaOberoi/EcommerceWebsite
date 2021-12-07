@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <!-- Box icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+
+    <!-- Custom StyleSheet -->
+    <link rel="stylesheet" href="styles.css" />
+    <title>Checkout</title>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="nav">
+      <div class="navigation container">
+        <div class="logo">
+          <h1>Classic</h1>
+        </div>
+
+        <div class="menu">
+          <div class="top-nav">
+            <div class="logo">
+              <h1>Classic</h1>
+            </div>
+            <div class="close">
+              <i class="bx bx-x"></i>
+            </div>
+          </div>
+
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="product.html" class="nav-link">Products</a>
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="wishlist.html" class="nav-link">Wishlist</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link">Account</a>
+            </li>
+            <li class="nav-item">
+              <a href="cart.html" class="nav-link icon"><i class="bx bx-shopping-bag"></i></a>
+            </li>
+          </ul>
+        </div>
+
+        <a href="cart.html" class="cart-icon">
+          <i class="bx bx-shopping-bag"></i>
+        </a>
+
+        <div class="hamburger">
+          <i class="bx bx-menu"></i>
+        </div>
+      </div>
+    </nav>
+    <div class="row divPay">
+  <div class="column c1">
+    <h2 style="margin-bottom: 10px;">Summary</h2>
+
+    <img src="images/product1.png" class="imgResumen">
+    <img src="images/product3.png" class="imgResumen">
+    <img src="images/product5.png" class="imgResumen">
+    <h3 style="color: #a9abae">+2 more</h3>
+
+
+    <div class="totalTxt">
+      <h3 style="color: #a9abae">Total</h3>
+      <h1>Rs. 2190</h1>
+    </div>
+
+  </div>
+  <div class="column c2">
+
+    <h2 style="margin-bottom: 10px;">Payment</h2>
+
+    <div class="card" id="divCard">
+      <div class='card-content'>
+        <img style="display: none" id="imgFranchise" class="logoFranquicia">
+        <div class="infoTarjeta">
+          <h5>Card Number</h5>
+          <h6 id="cardNumber">0000 0000 0000 0000</h6>
+          <h5>Expiration<span class="cvvStyle">CVV</span></h5>
+          <h6><span id="cardMonth">00</span> / <span id="cardYear">0000</span><span class="cvvStyle2" id="cardCVV">000</span></h6>
+        </div>
+      </div>
+    </div>
+
+    <br>
+    <div style="width: 100%;margin: auto;">
+      <div style="width: 50%;display: inline-block;"><b>Cardholder</b></div>
+      <input type="text" id="pagarTarjetaTit" placeholder="Cardholder" maxlength="16" style="width: 100%">
+    </div>
+
+    <div style="width: 100%;margin: auto;">
+      <div style="width: 50%;display: inline-block;"><b>Card Number</b></div>
+      <input type="text" id="pagarTarjetaNum" placeholder="Eg. 1111222233334444" style="width: 100%" maxlength="16" oninput="showCN()">
+    </div>
+
+    <div style="width: 100%;margin: auto;">
+      <div style="width: 50%;display: inline-block;"><b>Expiration</b></div>
+
+      <div class="row">
+        <div class="column">
+          <div style="width: 100%;display: inline-block;"><b>Month</b></div>
+          <input type="number" id="pagarTarjetaMes" placeholder="Eg. 03" min="01" max="12" style="width: 80%" oninput="showCE()">
+        </div>
+        <div class="column">
+          <div style="width: 100%;display: inline-block;"><b>Year</b></div>
+          <input type="number" id="pagarTarjetaAno" placeholder="Eg. 2024" min="2020" max="2100" style="width: 80%" oninput="showCE()">
+        </div>
+      </div>
+    </div>
+
+    <div style="width: 100%;margin: auto;">
+      <div style="width: 50%;display: inline-block;"><b>CVV</b></div>
+      <input type="number" id="pagarTarjetaCVV" placeholder="Eg. 123" min="001" max="9999" style="width: 50%" oninput="showCV()">
+    </div>
+
+    <button title="Make payment">Make payment</button>
+
+  </div>
+</div>
+
+<br>
+<footer id="footer" class="section footer">
+  <div class="container">
+    <div class="footer-container">
+      <div class="footer-center">
+        <h3>EXTRAS</h3>
+        <a href="#">Brands</a>
+        <a href="#">Gift Certificates</a>
+        <a href="#">Affiliate</a>
+        <a href="#">Specials</a>
+        <a href="#">Site Map</a>
+      </div>
+      <div class="footer-center">
+        <h3>INFORMATION</h3>
+        <a href="#">About Us</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Contact Us</a>
+        <a href="#">Site Map</a>
+      </div>
+      <div class="footer-center">
+        <h3>MY ACCOUNT</h3>
+        <a href="#">My Account</a>
+        <a href="#">Order History</a>
+        <a href="#">Wish List</a>
+        <a href="#">Newsletter</a>
+        <a href="#">Returns</a>
+      </div>
+      <div class="footer-center">
+        <h3>CONTACT US</h3>
+        <div>
+          <span>
+            <i class="fas fa-map-marker-alt"></i>
+          </span>
+            302,Yogeshwar Building, M-2, MiddleCircle,CP,New Delhi
+        </div>
+        <div>
+          <span>
+            <i class="far fa-envelope"></i>
+          </span>
+          shopclassic@gmail.com
+        </div>
+        <div>
+          <span>
+            <i class="fas fa-phone"></i>
+          </span>
+          011-78965421
+        </div>
+        <div>
+          <span>
+            <i class="far fa-paper-plane"></i>
+          </span>
+          NEW DELHI, INDIA
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- End Footer -->
+
+<!-- GSAP -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+<!-- Custom Script -->
+<script src="index.js"></script>
+</html>
