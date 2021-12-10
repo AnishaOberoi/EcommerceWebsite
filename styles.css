@@ -1186,6 +1186,7 @@ button:hover {
   background-color: #11324D;
   flex: 3;
   padding-top: 2%;
+  padding-bottom: 4%;
   border-radius: 0 5% 5% 0;
   color: white;
 }
@@ -1198,6 +1199,7 @@ button:hover {
   border-radius: 800px;
   border: 0 solid transparent;
   background-color: #f1c47b;
+  color: black;
 }
 .button1:hover,
 .button2:hover{
@@ -1212,6 +1214,7 @@ button:hover {
   padding: 1.5%;
   border-radius: 800px;
   border: 0 solid transparent;
+  color: black;
 }
 /******form******/
 .input-div {
